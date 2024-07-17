@@ -12,7 +12,7 @@ from tensorflow.keras.layers import BatchNormalization
 from tensorflow.keras.layers import BatchNormalization
 
 # Charger le modèle
-MODEL_PATH = os.path.join(settings.BASE_DIR, 'mobilenetv2_model.h5')
+MODEL_PATH = os.path.join(settings.BASE_DIR, '/mobilenetv2_model.h5')
 custom_objects = {'BatchNormalization': BatchNormalization}
 model = tf.keras.models.load_model(MODEL_PATH, custom_objects=custom_objects)
 
